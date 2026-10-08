@@ -1,0 +1,22 @@
+{
+  "name": "rlapoele-codex-skills",
+  "interface": {
+    "displayName": "Renaud Lapoële Codex Skills"
+  },
+  "plugins": [
+    {
+      "name": "guarded-domain-modeling",
+      "version": "0.1.0",
+      "description": "Explicit domain modeling with repository-first documentation and guarded ADR delegation.",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

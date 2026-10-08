@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "guarded-domain-modeling",
+  "version": "0.1.0",
+  "description": "Explicit domain modeling with repository-first documentation and guarded ADR delegation.",
+  "author": {
+    "name": "Renaud Lapoële",
+    "url": "https://github.com/rlapoele"
+  },
+  "homepage": "https://github.com/rlapoele/codex-skills",
+  "repository": "https://github.com/rlapoele/codex-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "domain-modeling",
+    "domain-driven-design",
+    "architecture-decision-records"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Guarded Domain Modeling",
+        "shortDescription": "Explicit domain modeling with guarded ADR delegation",
+        "longDescription": "Sharpen project terminology and bounded contexts while keeping documentation writes authorized and delegating ADR operations to the documentation-and-adrs workflow.",
+        "developerName": "Renaud Lapoële",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Use $domain-modeling to sharpen the domain model for this project."
+        ]
+      }
+    }
+  }
+}
